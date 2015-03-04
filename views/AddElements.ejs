@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="shortcut icon" href="https://s3-media2.fl.yelpcdn.com/assets/2/www/img/118ff475a341/ico/favicon.ico">
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.yelp.com/login" />
+  <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/www-pkg.css">
+  <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/gateway.css">
+
+
+</head>
+<body>
+  <div>
+    <div class="app-header simple-header">
+      <div class="header-container clearfix">
+        <h1 class="logo">
+          <a href="/">Yelp</a>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <h1 style="text-align: right;color: black; margin-right: 12px;
+  margin-top: 5px;">User Profile: <a href="/userProfile/<%= uid %>"><%= userName %></a>
+  <a href="/logout" class="ybtn ybtn-primary">Signout</a></h1>
+  
+  <form action="/elements/addElements" class="yform signup-form  city-hidden" method="POST">
+    <div style="margin-left: 50px; margin-top: 50px;">
+
+      <label>Element Name:</label>
+      <input id="element_name" style="width: 500px;" name="element_name" placeholder="New Element Name" required="required" type="text" value="">
+      
+      <input type="hidden" id="cid" name="cid" value="<%= currentCid %>">
+
+      <label>Description:</label>
+      <input id="description" style="width: 500px;" name="description" placeholder="Add description" required="required" type="text" value="">
+
+      <label>Rating</label>
+      <input id="rating" style="width: 500px;" name="rating" placeholder="Provide rating" required="required" type="text" value="">
+      <button id="signup-button" type="submit" value="Save" style="margin-left: 432px;" class="ybtn ybtn-primary ytype disable-on-submit submit signup-button"><span>Save</span></button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="shortcut icon" href="https://s3-media2.fl.yelpcdn.com/assets/2/www/img/118ff475a341/ico/favicon.ico">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch" title="Yelp">
+    <title>Edit | Yelp</title>
+    <link rel="stylesheet" type="text/css" media="all" href="https://s3-media4.fl.yelpcdn.com/assets/2/www/css/1f90cd074450/www-pkg.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://s3-media3.fl.yelpcdn.com/assets/2/www/css/efee729b03a0/signup/signup.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://s3-media1.fl.yelpcdn.com/assets/2/www/css/0e229d4f5977/signup/landing_picture.css">
+</head>
+<body>
+    <div class="app-header simple-header">
+        <div class="header-container clearfix">
+
+            <h1 class="logo">
+                <a href="/">Yelp</a>
+            </h1>
+        </div>
+    </div>
+    <h1 style="text-align: right;color: black; margin-right: 12px;
+    margin-top: 5px;">User Profile: <a href="/userProfile/<%= uid %>"><%= userName %></a>
+    <a href="/logout" class="ybtn ybtn-primary">Signout</a></h1>
+    <div class="embossed-box">
+        <div class="signup-form-container">
+            <div class="header">
+                <h2>Edit Category</h2>
+                
+            </div>
+
+            <form action="/EditCategory/<%= data[0].cid %>" class="yform signup-form  city-hidden" id="signup-form" method="POST">
+                <div>
+
+                    <label >Category Name</label>
+                    <input id="category_name" name="category_name" required="required" type="text" value="<%= data[0].category_name %>">
+
+
+                    <button id="add-button" type="submit" style="margin-left: 189px;" value="Add Category" class="ybtn ybtn-primary ytype disable-on-submit submit signup-button"><span>Save & Exit</span></button>
+                </div>
+            </form>
+            <div class="picture-container">
+                <img src="https://s3-media4.fl.yelpcdn.com/assets/2/www/img/1e82406ff345/signup/signup_illustration.png">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

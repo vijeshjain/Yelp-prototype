@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="shortcut icon" href="https://s3-media2.fl.yelpcdn.com/assets/2/www/img/118ff475a341/ico/favicon.ico">
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.yelp.com/login" />
+  <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/www-pkg.css">
+  <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/gateway.css">
+</head>
+<body>
+  <div>
+    <div class="app-header simple-header">
+      <div class="header-container clearfix">
+        <h1 class="logo">
+          <a href="/">Yelp</a>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <h1 style="text-align: right;color: black; margin-right: 12px;
+  margin-top: 5px;">User Profile: <a href="/userProfile/<%= uid %>"><%= userName %></a>
+  <a href="/logout" class="ybtn ybtn-primary">Signout</a></h1>
+  <div style="margin-left: 20px;  margin-top: 20px;">
+    <table>
+
+     <tr><h1>Category - Elements</h1></tr>
+     
+     
+     <tr><a href="/AddElements/<%= cid %>">Add</a></tr>
+     <% for(var i=0; i<data.length;i++) 
+     { %>
+     <tr>
+      <td>
+        <h2><a href="/reviews/<%= data[i].eid %>"> <%= data[i].element_name %></a></h2></td>
+
+      </tr>
+
+      <tr>
+        <td><%= data[i].description %></td>
+      </tr>
+      <tr>
+        <td style="font-style: oblique; ">Rating: <%= data[i].rating %></td>
+      </tr>
+      <tr>
+        <td><br></td>
+      </tr>
+      <% } %>
+
+
+
+    </table><br>
+
+  </div>
+</body>
+</html>

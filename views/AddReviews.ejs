@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="shortcut icon" href="https://s3-media2.fl.yelpcdn.com/assets/2/www/img/118ff475a341/ico/favicon.ico">
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.yelp.com/login" />
+  <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/www-pkg.css">
+  <link rel="stylesheet" type="text/css" media="all" href="../stylesheets/gateway.css">
+</head>
+<body>
+  <div>
+    <div class="app-header simple-header">
+      <div class="header-container clearfix">
+        <h1 class="logo">
+          <a href="/">Yelp</a>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <form action="/review/AddReviews" class="yform signup-form  city-hidden" method="POST">
+
+  <!--   <ul class="inline-layout clearfix">
+  <li> -->
+    <div style="margin-left: 50px; margin-top: 50px;">
+      <h1>Write a Review!</h1>
+      
+      <textarea style="width: 500px" name="comments" placeholer="Send a compliment..." class="expanded" required="required"></textarea>
+      <button id="signup-button" type="submit" value="Save" style="margin-left: 432px;" class="ybtn ybtn-primary ytype disable-on-submit submit signup-button"><span>Save</span></button>
+      
+      <input type="hidden" id="currentEid" name="currentEid" value="<%= currentEid %>">
+
+      <input type="hidden" id="userid" name="userid" value="<%= userid %>">
+
+
+
+
+
+    </div>
+
+
+
+  </form>
+</body>
+</html>
