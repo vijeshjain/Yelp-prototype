@@ -7,35 +7,35 @@
 3. Enhanced the throughput by implementing Database connection pooling. 
 
 ### Screenshots
-1. Login Screen:
+- Login Screen:
 
 ![alt tag](https://github.com/vijeshjain/Yelp-prototype/blob/master/Project_screenshots/login_screen.PNG)
 
-2. SignUp Screen:
+- SignUp Screen:
 
 ![alt tag](https://github.com/vijeshjain/Yelp-prototype/blob/master/Project_screenshots/register_screen.PNG)
 
-3. User Profile:
+- User Profile:
 
-![alt tag]()
+![alt tag](https://github.com/vijeshjain/Yelp-prototype/blob/master/Project_screenshots/user_profile.png)
 
-4. Homepage:
+- Homepage:
 
 ![alt tag](https://github.com/vijeshjain/Yelp-prototype/blob/master/Project_screenshots/homepage.PNG)
 
-5. Categories:
+- Categories:
 
 ![alt tag](https://github.com/vijeshjain/Yelp-prototype/blob/master/Project_screenshots/categories.PNG)
 
-6. Elements:
+- Elements:
 
 ![alt tag](https://github.com/vijeshjain/Yelp-prototype/blob/master/Project_screenshots/add_element.PNG)
 
-7. Add Reviews:
+- Add Reviews:
 
 ![alt tag](https://github.com/vijeshjain/Yelp-prototype/blob/master/Project_screenshots/add_review.PNG)
 
-8. User Reviews:
+- User Reviews:
 
 ![alt tag](https://github.com/vijeshjain/Yelp-prototype/blob/master/Project_screenshots/user_reviews.PNG)
 
@@ -51,5 +51,5 @@ Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
 
 Nodeclipse is free open-source project that grows with your contributions.
 
-### Reference:
+### Reference/Source:
 http://www.yelp.com
