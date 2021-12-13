@@ -16,11 +16,11 @@ var pool = generic_pool.Pool({
 
 			user:'root',
 
-			password:'vijesh',
+			password:'',
 
-			database: 'yelpDB',
+			database: '',
 
-			port : 4301
+			port : 
 
 		});
 
